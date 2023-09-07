@@ -18,7 +18,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 
 - Ventana: `Home`
   En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo "**beta**", ya que aun no cuenta con informacion relevante.
-  [Home](/Users/paradyse/Development/frontend/web2/DashboardDensidad/app/assets/Captura de Pantalla 2023-09-07 a la(s) 15.34.23.png)
+  ![Home](/Users/paradyse/Development/frontend/web2/DashboardDensidad/app/assets/Captura de Pantalla 2023-09-07 a la(s) 15.34.23.png)
 
 - Ventana: `About`
   En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
