@@ -69,7 +69,7 @@ Para obtener más información sobre Next.js y otros componentes, puede consulta
 ## Deploy
 
 Vercel Link:
-[Deploy](https://dashboard-densidad.vercel.app/)
+[https://dashboard-densidad.vercel.app/](https://dashboard-densidad.vercel.app/)
 
 ## Meta
 
