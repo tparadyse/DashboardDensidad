@@ -4,7 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-- npm run dev
+```sh
+npm run dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -41,3 +43,26 @@ To learn more about Next.js, and other components you can take a look at the fol
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+## Release History
+
+- 0.2.1
+  - CHANGE: Update docs (module code remains unchanged)
+- 0.2.0
+  - CHANGE: Remove `setDefaultXYZ()`
+  - ADD: Add `init()`
+- 0.1.1
+  - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
+- 0.1.0
+  - The first proper release
+  - CHANGE: Rename `foo()` to `bar()`
+- 0.0.1
+  - Work in progress
+
+## Meta
+
+Juan Diaz – [@YourTwitter](https://twitter.com/dbader_org) – al19760726@ite.edu.mx
+
+Distributed under the XYZ license. See `LICENSE` for more information.
+
+[https://github.com/tparadyse/github-link](https://github.com/dbader/)
