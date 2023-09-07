@@ -19,7 +19,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 - Ventana: `Home`
   En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo "**beta**", ya que aun no cuenta con informacion relevante.
 
-  ![Home|100x100](app/assets/home.png)
+  ![Home](app/assets/home.png?width=50)
 
 - Ventana: `About`
   En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
