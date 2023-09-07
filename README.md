@@ -66,10 +66,15 @@ Para obtener más información sobre Next.js y otros componentes, puede consulta
 
 - [Create Your Colors](https://paletadecolores.online/) - Crea tu paleta de colores y has tu pagina mas creativa.
 
+## Deploy
+
+Vercel Link:
+[Deploy](https://dashboard-densidad.vercel.app/)
+
 ## Meta
 
 Juan Diaz – [@tparadyse](https://www.instagram.com/tparadyse) – al19760726@ite.edu.mx
 
 Distribuido bajo la licencia XYZ. Consulte `LICENCE` para obtener más información.
 
-[https://github.com/tparadyse/github-link](https://github.com/dbader/)
+[https://github.com/tparadyse/](https://github.com/tparadyse/)
