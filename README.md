@@ -16,49 +16,43 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 
 ### Ventanas Desplegables
 
-Ventana: 'Acerca de'
-En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona
+Ventana: 'Home'
+En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo `beta`, ya que aun no cuenta con informacion relevante.
 
-Ventana: 'Composicion corporal'
-Esta ventana muestra un formulario el cual le pide una serie de datos al usuario que al ser llenados devuelve una tabla la cual le indica al usuario su composicion corporal junto con una gráfica de los porcentajes de grasa corporal
+Ventana: 'About'
+En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
 
-Ventana: 'Menu'
+Ventana: 'Corporal'
+Esta ventana muestra un formulario el cual le pide una serie de datos al usuario que al ser llenados devuelve una tabla la cual le indica al usuario su composicion corporal junto con una gráfica de los porcentajes de grasa corporal.
 
 ### Componentes
 
 Componente: 'Form'
+Dicho componente despliega un formulario con opciones de tipo `number`, los cuales se usaran para calcular la composicion corporal del usuario.
 
 Componente: 'Menu'
+El componente menu es el encargado de redireccionar las distintas ventanas que el usuario puede navegar.
 
 Componente: 'TableResults'
+Este componente muestra de manera visual en una tabla los resultados obtenidos al calcularse los distintos tipos de mediciones del usuario.
 
 Componente: 'Charts'
+Este componente se encarga de mostrar de manera visual al usuario una grafica de tipo `pie` el cual ayudara a mostrar de otra forma los resultados.
 
-## Learn More
+## Aprende Mas
 
 Para obtener más información sobre Next.js y otros componentes, puede consultar los siguientes recursos:
 
 - [Next.js Documentation](https://nextjs.org/docs) - Obtenga más información sobre las funciones y la API de Next.js.
 - [Learn Next.js](https://nextjs.org/learn) - Un tutorial interactivo de Next.js.
 
-## Release History
+- [Learn Chart.js](https://www.chartjs.org/docs/latest/) - Introduccion basica a graficos con Chart.js
 
-- 0.2.1
-  - CHANGE: Update docs (module code remains unchanged)
-- 0.2.0
-  - CHANGE: Remove `setDefaultXYZ()`
-  - ADD: Add `init()`
-- 0.1.1
-  - FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-- 0.1.0
-  - The first proper release
-  - CHANGE: Rename `foo()` to `bar()`
-- 0.0.1
-  - Work in progress
+- [Create Your Colors](https://paletadecolores.online/) - Crea tu paleta de colores y has tu pagina mas creativa.
 
 ## Meta
 
-Juan Diaz – [@YourTwitter](https://twitter.com/dbader_org) – al19760726@ite.edu.mx
+Juan Diaz – [@tparadyse](https://www.instagram.com/tparadyse) – al19760726@ite.edu.mx
 
 Distribuido bajo la licencia XYZ. Consulte `LICENCE` para obtener más información.
 
