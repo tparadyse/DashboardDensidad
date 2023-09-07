@@ -18,29 +18,40 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 
 - Ventana: `Home`
   En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo "**beta**", ya que aun no cuenta con informacion relevante.
-  ![Home](app/assets/home.png){width=100px height=50px}
+
+  ![Home](app/assets/home.png){width=50px height=50px}
 
 - Ventana: `About`
   En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
-  [About]()
+
+  ![About](app/assets/about.png){width=50px height=50px}
 
 - Ventana: `Corporal`
   Esta ventana muestra un formulario el cual le pide una serie de datos al usuario que al ser llenados devuelve una tabla la cual le indica al usuario su composicion corporal junto con una gráfica de los porcentajes de grasa corporal.
-  [Corporal]()
+
+  ![Corporal](app/assets/density.png){width=50px height=50px}
 
 ### Componentes
 
 - Componente: `Form`
   Dicho componente despliega un formulario con opciones de tipo "**number**", los cuales se usaran para calcular la composicion corporal del usuario.
 
+![Form](app/assets/form.png){width=50px height=50px}
+
 - Componente: `Menu`
   El componente menu es el encargado de redireccionar las distintas ventanas que el usuario puede navegar.
+
+  ![Menu](app/assets/menu.png){width=50px height=50px}
 
 - Componente: `TableResults`
   Este componente muestra de manera visual en una tabla los resultados obtenidos al calcularse los distintos tipos de mediciones del usuario.
 
+  ![Table Results](app/assets/table.png){width=50px height=50px}
+
 - Componente: `Charts`
   Este componente se encarga de mostrar de manera visual al usuario una grafica de tipo "**pie**" el cual ayudara a mostrar de otra forma los resultados.
+
+  ![Chart](app/assets/chart.png){width=50px height=50px}
 
 ## Aprende Mas
 
