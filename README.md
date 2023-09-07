@@ -1,23 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este es un proyecto [Next.js](https://nextjs.org/) iniciando con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Comenzando
 
-First, run the development server:
+Primero, ejecutar el servidor de desarrollo:
 
 ```sh
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) con su navegador para ver el resultado de manera local.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Practica 01
 
-## Practice01
-
-Practica 01
 Esta práctica consiste en un dashboard el cual tiene botones con acceso al inicio, Acerca de y un formulario el cual regresa la composicion corporal del usuario
 
-### Showed Windows
+### Ventanas Desplegables
 
 Ventana: 'Acerca de'
 En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona
@@ -27,22 +24,22 @@ Esta ventana muestra un formulario el cual le pide una serie de datos al usuario
 
 Ventana: 'Menu'
 
-### Components
+### Componentes
 
-Component: 'Form'
+Componente: 'Form'
 
-Component: 'Menu'
+Componente: 'Menu'
 
-Component: 'TableResults'
+Componente: 'TableResults'
 
-Component: 'Charts'
+Componente: 'Charts'
 
 ## Learn More
 
-To learn more about Next.js, and other components you can take a look at the following resources:
+Para obtener más información sobre Next.js y otros componentes, puede consultar los siguientes recursos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - Obtenga más información sobre las funciones y la API de Next.js.
+- [Learn Next.js](https://nextjs.org/learn) - Un tutorial interactivo de Next.js.
 
 ## Release History
 
@@ -63,6 +60,6 @@ To learn more about Next.js, and other components you can take a look at the fol
 
 Juan Diaz – [@YourTwitter](https://twitter.com/dbader_org) – al19760726@ite.edu.mx
 
-Distributed under the XYZ license. See `LICENSE` for more information.
+Distribuido bajo la licencia XYZ. Consulte `LICENCE` para obtener más información.
 
 [https://github.com/tparadyse/github-link](https://github.com/dbader/)
