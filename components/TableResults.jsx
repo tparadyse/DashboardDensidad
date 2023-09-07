@@ -21,7 +21,7 @@ export const CompositionTable = ({ porcentages, masses, density }) => {
 
   return (
     <div className='w-3/4 bg-white h-fit p-4 rounded-md ml-12 text-c4'>
-     <h1 className='text-xl font-bold mb-2 text-center'>Composicion Corporal</h1>
+     <h1 className='text-xl font-bold mb-2 text-center'>Composición Corporal</h1>
         
         <table className='table-auto w-full text-left items-center border-collapse border-y mb-2 '>
           <thead>
