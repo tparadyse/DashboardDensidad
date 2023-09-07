@@ -19,7 +19,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 - Ventana: `Home`
   En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo "**beta**", ya que aun no cuenta con informacion relevante.
 
-  ![Home](app/assets/home.png)(width=50px height=50px)
+  ![Home](app/assets/home.png){width='50px' height='50px'}
 
 - Ventana: `About`
   En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
@@ -46,12 +46,12 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 - Componente: `TableResults`
   Este componente muestra de manera visual en una tabla los resultados obtenidos al calcularse los distintos tipos de mediciones del usuario.
 
-  ![Table Results](app/assets/table.png)(width=50px height=50px)
+  ![Table Results](app/assets/table.png)(width='50px' height='50px')
 
 - Componente: `Charts`
   Este componente se encarga de mostrar de manera visual al usuario una grafica de tipo "**pie**" el cual ayudara a mostrar de otra forma los resultados.
 
-  ![Chart](app/assets/chart.png)(width=50px height=50px)
+  ![Chart](app/assets/chart.png)(width='50px' height='50px')
 
 ## Aprende Mas
 
