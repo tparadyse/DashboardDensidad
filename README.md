@@ -19,7 +19,8 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 - Ventana: `Home`
   En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo "**beta**", ya que aun no cuenta con informacion relevante.
 
-  <img src="app/assets/home.png" alt="Home" width="500"/>
+  <!-- Otra forma de ajustar imagenes -> <img src="app/assets/home.png" alt="Home" width="500"/> -->
+
   ![Home](app/assets/home.png)
 
 - Ventana: `About`
