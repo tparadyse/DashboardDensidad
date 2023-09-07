@@ -17,7 +17,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 ### Ventanas Desplegables
 
 - Ventana: `Home`
-  En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo `beta`, ya que aun no cuenta con informacion relevante.
+  En esta ventana se muestra los datos principales al correr el programa, el cual se encuentra en modo **beta**, ya que aun no cuenta con informacion relevante.
 
 - Ventana: `About`
   En esta ventana se despliega informacion acerca de mi, con botones con acceso a mis redes y una foto de mi persona.
@@ -28,7 +28,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
 ### Componentes
 
 - Componente: `Form`
-  Dicho componente despliega un formulario con opciones de tipo `number`, los cuales se usaran para calcular la composicion corporal del usuario.
+  Dicho componente despliega un formulario con opciones de tipo **number**, los cuales se usaran para calcular la composicion corporal del usuario.
 
 - Componente: `Menu`
   El componente menu es el encargado de redireccionar las distintas ventanas que el usuario puede navegar.
@@ -37,7 +37,7 @@ Esta práctica consiste en un dashboard el cual tiene botones con acceso al inic
   Este componente muestra de manera visual en una tabla los resultados obtenidos al calcularse los distintos tipos de mediciones del usuario.
 
 - Componente: `Charts`
-  Este componente se encarga de mostrar de manera visual al usuario una grafica de tipo `pie` el cual ayudara a mostrar de otra forma los resultados.
+  Este componente se encarga de mostrar de manera visual al usuario una grafica de tipo **pie** el cual ayudara a mostrar de otra forma los resultados.
 
 ## Aprende Mas
 
