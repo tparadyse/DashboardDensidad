@@ -5,16 +5,16 @@ const sans = PT_Sans({ subsets: ['latin'], weight: '400' })
 
 const menuRoutes = [
     {
-        ruta: "/",
-        nombre: "INICIO"
+        route: "/",
+        name: "INICIO"
     },
     {
-        ruta: "/about",
-        nombre: "ACERCA DE"
+        route: "/about",
+        name: "ACERCA DE"
     },
     {
-        ruta: "/composicion_corporal",
-        nombre: "DENSIDAD"
+        route: "/composicion_corporal",
+        name: "DENSIDAD"
     }
 ];
 
@@ -25,7 +25,7 @@ function Menu () {
             <ol className="pt-6 text-c4">
             {
                 menuRoutes.map((menu,key) => (
-                    <li key={key} className="pt-4"><Link href={menu.ruta}>{menu.nombre}</Link></li>
+                    <li key={key} className="pt-4"><Link href={menu.route}>{menu.name}</Link></li>
                 ))
             }
             </ol>

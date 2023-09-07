@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ChartComponent from './Charts';
 
-export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
+export const CompositionTable = ({ porcentages, masses, density }) => {
 
     const [chartData, setChartData] = useState({});
 
@@ -10,13 +10,13 @@ export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
       setChartData({
         labels: ["Masa Grasa", "Masa Osea", "Masa Residual", "Masa Muscular"],
         data: [
-          porcentajes.masa_grasa.toFixed(2),
-          porcentajes.masa_osea.toFixed(2),
-          porcentajes.masa_residual.toFixed(2),
-          porcentajes.masa_muscular.toFixed(2),
+          porcentages.fat_mass.toFixed(2),
+          porcentages.bone_mass.toFixed(2),
+          porcentages.residual_mass.toFixed(2),
+          porcentages.muscle_mass.toFixed(2),
         ],
       });
-    }, [porcentajes]);
+    }, [porcentages]);
 
 
   return (
@@ -43,11 +43,11 @@ export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
                 Masa grasa
               </td>
               <td>
-                { porcentajes.masa_grasa.toFixed(2) } %
+                { porcentages.fat_mass.toFixed(2) } %
               </td>
               <td>
                 
-                { masas.masa_grasa.toFixed(2) } kg
+                { masses.fat_mass.toFixed(2) } kg
               </td>
             </tr>
 
@@ -57,10 +57,10 @@ export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
               </td>
               <td>
                 
-                { porcentajes.masa_osea.toFixed(2) } %
+                { porcentages.bone_mass.toFixed(2) } %
               </td>
               <td>
-                { masas.masa_osea.toFixed(2) } kg
+                { masses.bone_mass.toFixed(2) } kg
               </td>
             </tr>
 
@@ -71,11 +71,11 @@ export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
 
               <td>
                 
-                { porcentajes.masa_residual.toFixed(2) } %
+                { porcentages.residual_mass.toFixed(2) } %
               </td>
 
               <td>
-                { masas.masa_residual } kg
+                { masses.residual_mass } kg
               </td>
             </tr>
 
@@ -84,16 +84,16 @@ export const TablaComposicion = ({ porcentajes, masas, densidad }) => {
                 Masa muscular
               </td>
               <td>
-                { porcentajes.masa_muscular.toFixed(2) } %
+                { porcentages.muscle_mass.toFixed(2) } %
               </td>
               <td>
-                { masas.masa_muscular.toFixed(2) } kg
+                { masses.muscle_mass.toFixed(2) } kg
               </td>
             </tr>
 
           </tbody>
         </table>
-        <span className='p-2 font-bold'> Densidad corporal: { densidad.toFixed(3) } </span>
+        <span className='p-2 font-bold'> Densidad corporal: { density.toFixed(3) } </span>
         <div>
             <ChartComponent chartData={chartData} />
         </div>

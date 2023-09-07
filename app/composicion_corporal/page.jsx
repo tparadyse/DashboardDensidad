@@ -1,85 +1,85 @@
 'use client'
 
 import { useState } from "react"
-import { Formulario } from '@/components/Form'
-import { TablaComposicion } from '@/components/TableResults'
+import { FormPage } from '@/components/Form'
+import { CompositionTable} from '@/components/TableResults'
 
-export const Densidad = () => {
+export const Density = () => {
 
-    const [densidad, setDensidad] = useState('')
+    const [density, setDensity] = useState('')
 
-    const [porcentajes, setPorcentajes] = useState({
-      masa_osea: '',
-      masa_grasa: '',
-      masa_residual: '',
-      masa_muscular: ''
+    const [porcentage, setPorcentage] = useState({
+        bone_mass: '',
+        fat_mass: '',
+        residual_mass: '',
+        muscle_mass: ''
     });
   
-    const [masas, setMasas] = useState({
-        masa_osea: '',
-        masa_grasa: '',
-        masa_residual: '',
-        masa_muscular: ''
+    const [mass, setMass] = useState({
+        bone_mass: '',
+        fat_mass: '',
+        residual_mass: '',
+        muscle_mass: ''
     });
 
-    const calcularDensidad = (inputValues) => {
-        const { genero, bicipital, tricipital, subescapular, supraileaco, femur, bistiloideo, talla, peso } = inputValues;
+    const calculateDensity = (inputValues) => {
+        const { gender, bicipital, tricipital, subescapular, supraileaco, femur, bistiloideo, size, weight } = inputValues;
   
         const X1 = bicipital + tricipital + subescapular + supraileaco;
   
-        const calcularMasaOsea = () => {
-            return Math.pow(Math.pow((talla / 100), 2) * (femur / 100) * (bistiloideo / 100) * 400, 0.712) * 3.02;
+        const calculateBoneMass = () => {
+            return Math.pow(Math.pow((size / 100), 2) * (femur / 100) * (bistiloideo / 100) * 400, 0.712) * 3.02;
         };
   
-        const calcularDensidadYResidual = () => {
-            const densidadCorporal = genero === 'hombre'
+        const calculateResidualDensity = () => {
+            const corporalDensity = gender === 'hombre'
                 ? 1.1765 - (0.0744 * Math.log10(X1))
                 : 1.1567 - (0.0717 * Math.log10(X1));
-            const residual = genero === 'hombre' ? peso * 0.24 : peso * 0.21;
-            return { densidadCorporal, residual };
+            const residual = gender === 'hombre' ? weight * 0.24 : weight * 0.21;
+            return { corporalDensity, residual };
         };
   
-        const densidadYMasas = () => {
-            const { densidadCorporal, residual } = calcularDensidadYResidual();
-            setDensidad(densidadCorporal);
+        const massesDensities = () => {
+            const { corporalDensity, residual } = calculateResidualDensity();
+            setDensity(corporalDensity);
       
             //Porcentajes
-            const grasa = (495 / densidadCorporal) - 450;
-            const porcentajeMasaOsea = calcularMasaOsea() * 100 / peso;
-            const porcentajeMasaResidual = residual * 100 / peso;
-            const porcentajeMasaMuscular = 100 - (grasa + porcentajeMasaOsea + porcentajeMasaResidual);
+            const fat = (495 / corporalDensity) - 450;
+            const porcentageBoneMass = calculateBoneMass() * 100 / weight;
+            const porcentageResidualMass = residual * 100 / weight;
+            const porcentageMuscleMass = 100 - (fat + porcentageBoneMass + porcentageResidualMass);
 
             //Masas
-            const masaGrasaKilos = peso * (grasa / 100);
-            const masaMuscularKilos = peso - (masaGrasaKilos + calcularMasaOsea() + residual);
+            const kilosFatMass = weight * (fat / 100);
+            const kilosMuscleMass = weight - (kilosFatMass + calculateBoneMass() + residual);
   
-            setMasas((prevValues) => ({
+            setMass((prevValues) => ({
                 ...prevValues,
-                masa_osea: calcularMasaOsea(),
-                masa_grasa: masaGrasaKilos,
-                masa_muscular: masaMuscularKilos,
-                masa_residual: residual,
+                bone_mass: calculateBoneMass(),
+                fat_mass: kilosFatMass,
+                muscle_mass: kilosMuscleMass,
+                residual_mass: residual,
             }));
   
-            setPorcentajes((prevValues) => ({
+            setPorcentage((prevValues) => ({
                 ...prevValues,
-                masa_osea: porcentajeMasaOsea,
-                masa_grasa: grasa,
-                masa_muscular: porcentajeMasaMuscular,
-                masa_residual: porcentajeMasaResidual,
+                bone_mass: porcentageBoneMass,
+                fat_mass: fat,
+                muscle_mass: porcentageMuscleMass,
+                residual_mass: porcentageResidualMass,
             }));
         };
   
-        densidadYMasas();
+        massesDensities();
     };
   
 
     return (
         <div className='grid grid-cols-2 gap-x-6 bg-c6 items-center justify-center h-screen'>
-            <Formulario calcularDensidad={calcularDensidad}/>
-            { densidad &&  <TablaComposicion porcentajes={porcentajes} masas={masas} densidad={densidad}/> }
+            <FormPage calculateDensity={calculateDensity}/>
+            { density &&  <CompositionTable porcentages={porcentage} masses={mass} density={density}/> }
         </div>
     );
 }
 
-export default Densidad
+export default Density

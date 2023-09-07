@@ -3,13 +3,13 @@ import { Barlow } from "next/font/google";
 
 const barlow = Barlow({subsets: ['latin'], weight: "100" })
 
-export const Formulario = ({ calcularDensidad }) => {
+export const FormPage = ({ calculateDensity }) => {
     
     const [inputValues, setInputValues] = useState({
-        genero: '',
-        peso: '',
-        talla: '',
-        edad: '',
+        gender: '',
+        weight: '',
+        size: '',
+        age: '',
         bicipital: '',
         tricipital: '',
         subescapular: '',
@@ -36,14 +36,14 @@ export const Formulario = ({ calcularDensidad }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if([inputValues.genero, inputValues.bicep, inputValues.tricep, inputValues.subscapular, inputValues.supraileaco].includes('')){
+        if([inputValues.gender, inputValues.bicep, inputValues.tricep, inputValues.subescapular, inputValues.supraileaco].includes('')){
             console.log('Existen campos faltantes');
             setError(true);
             return
         }
         setError(false);
         
-        calcularDensidad(inputValues);
+        calculateDensity(inputValues);
     };
 
     return (
@@ -60,12 +60,12 @@ export const Formulario = ({ calcularDensidad }) => {
 
                                 <div className='flex flex-row space-x-4'>
                                     <label className='font-normal'>Masculino</label>
-                                    <input className='form-input bg-c2' type="radio"  name='genero' value='hombre' required onChange={handleInputChange} />
+                                    <input className='form-input bg-c2' type="radio"  name='gender' value='hombre' required onChange={handleInputChange} />
                                 </div>
 
                                 <div className='flex flex-row space-x-4'>
                                     <label className='font-normal'>Femenino</label>
-                                    <input className='form-input bg-c2' type="radio"  name='genero' value='mujer' required onChange={handleInputChange}  />
+                                    <input className='form-input bg-c2' type="radio"  name='gender' value='mujer' required onChange={handleInputChange}  />
                                 </div>
 
                             </div>
@@ -74,19 +74,19 @@ export const Formulario = ({ calcularDensidad }) => {
                                
                         <div className='flex flex-col relative'>
                             <label>Peso</label>
-                            <input className='form-input bg-c2' type="number" name='peso' value={inputValues.peso} placeholder='Ingrese su peso' required onChange={handleInputChange}/>
+                            <input className='form-input bg-c2' type="number" name='weight' value={inputValues.weight} placeholder='Ingrese su peso' required onChange={handleInputChange}/>
                             <span className="input-extent">kg</span>
                         </div>
                                
                         <div className='flex flex-col relative'>
                             <label>Talla</label>
-                            <input className='form-input bg-c2' type="number" name='talla' value={inputValues.talla} placeholder='Ingrese su talla' required onChange={handleInputChange}/>
+                            <input className='form-input bg-c2' type="number" name='size' value={inputValues.size} placeholder='Ingrese su talla' required onChange={handleInputChange}/>
                             <span className="input-extent">m</span>
                         </div>
                                 
                         <div className='flex flex-col'>
                             <label>Edad</label>
-                            <input className='form-input bg-c2' type="number" name='edad' value={inputValues.edad} placeholder='Ingrese su edad' required onChange={handleInputChange}/>
+                            <input className='form-input bg-c2' type="number" name='age' value={inputValues.age} placeholder='Ingrese su edad' required onChange={handleInputChange}/>
                         </div>
 
                     </div>
